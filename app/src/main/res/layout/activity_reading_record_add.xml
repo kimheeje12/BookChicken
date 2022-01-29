@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5D4D4"
+    tools:context=".ReadingRecordEdit">
+
+    <EditText
+        android:id="@+id/author"
+        android:background="@drawable/image_border"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:hint="작가"
+        android:textColorHint="#808080"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/booktitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/booktitle"
+        app:layout_constraintTop_toBottomOf="@+id/booktitle" />
+
+    <EditText
+        android:id="@+id/booktitle"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/image_border"
+        android:hint="책 제목"
+        android:textColorHint="#808080"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bookimage" />
+
+    <EditText
+        android:id="@+id/bookreord"
+        android:layout_width="340dp"
+        android:layout_height="370dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/image_border"
+        android:hint="서평"
+        android:textColorHint="#808080"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bookimage"
+        android:background="@drawable/image_border"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/author"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:isIndicator="false"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:stepSize="0.5"
+        android:progressTint="#FFC107"
+        app:layout_constraintEnd_toEndOf="@+id/author"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/author"
+        app:layout_constraintTop_toBottomOf="@+id/author" />
+
+    <Button
+        android:id="@+id/btn_imageadd"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#C0C0C0"
+        android:text="이미지 추가 / 수정"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bookimage"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/bookimage"
+        app:layout_constraintTop_toBottomOf="@+id/bookimage" />
+
+    <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#C0C0C0"
+        android:text="완료"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bookreord"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/bookreord"
+        app:layout_constraintTop_toBottomOf="@+id/bookreord" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

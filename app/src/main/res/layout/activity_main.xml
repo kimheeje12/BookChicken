@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5D4D4"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="85dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="MY Library"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phrase"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_booksearch"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#C0C0C0"
+        android:drawableLeft="@drawable/search_btn"
+        android:text="책 검색"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phrase" />
+
+    <Button
+        android:id="@+id/btn_library"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#C0C0C0"
+        android:drawableLeft="@drawable/favorite"
+        android:text="베스트셀러"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_booksearch"
+        app:layout_constraintStart_toStartOf="@+id/btn_booksearch"
+        app:layout_constraintTop_toBottomOf="@+id/btn_booksearch" />
+
+
+    <Button
+        android:id="@+id/btn_readingbook"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#C0C0C0"
+        android:drawableLeft="@drawable/bestseller"
+        android:text="읽고 있는 책"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_library"
+        app:layout_constraintStart_toStartOf="@+id/btn_library"
+        app:layout_constraintTop_toBottomOf="@+id/btn_library" />
+
+    <Button
+        android:id="@+id/btn_bookmemo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#C0C0C0"
+        android:drawableLeft="@drawable/memo_btn"
+        android:text="독서 메모"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_readingbook"
+        app:layout_constraintStart_toStartOf="@+id/btn_readingbook"
+        app:layout_constraintTop_toBottomOf="@+id/btn_readingbook" />
+
+    <Button
+        android:id="@+id/btn_ReadingRecord"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#C0C0C0"
+        android:drawableLeft="@drawable/report"
+        android:text="완독 리포트"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_bookmemo"
+        app:layout_constraintStart_toStartOf="@+id/btn_bookmemo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bookmemo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

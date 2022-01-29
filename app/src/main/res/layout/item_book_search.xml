@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="35dp"
+    android:layout_width="300dp"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/bookimage"
+        android:background="@drawable/image_border"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="이미지"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:orientation="vertical"
+        android:layout_height="145dp">
+
+        <TextView
+            android:id="@+id/author"
+            android:background="@drawable/image_border"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:padding="10dp"
+            android:hint="작가"
+            android:textColorHint="#808080"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/publisher"
+            android:background="@drawable/image_border"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:padding="10dp"
+            android:hint="출판사"
+            android:textColorHint="#808080"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:background="@drawable/image_border"
+            android:padding="10dp"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:hint="가격"
+            android:textColorHint="#808080"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

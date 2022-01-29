@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="35dp"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:background="#D5D4D4"
+    android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/LBRRY_NM"
+            android:background="@drawable/image_border"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:padding="10dp"
+            android:hint="도서관명"
+            android:textColorHint="#808080"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/BOOK_CO"
+        android:background="@drawable/image_border"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:hint="자료수(도서)"
+        android:textColorHint="#808080"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fdrm_close_date"
+        android:background="@drawable/image_border"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:hint="평일운영시작시각"
+        android:textColorHint="#808080"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tel_no"
+        android:background="@drawable/image_border"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:hint="평일운영종료시각"
+        android:textColorHint="#808080"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
